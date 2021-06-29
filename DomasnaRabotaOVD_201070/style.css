@@ -1,0 +1,551 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Tahoma", sans-serif;
+}
+.div{
+    display: flex;
+    background-color: #253f53;
+    justify-content: center;
+}
+.div header{
+    width: auto;
+    background-color: #253f53;
+    position: sticky;
+    top: 0;
+
+}
+
+.image .background{
+    max-width: 100%;
+    max-height: 100%;
+    filter: brightness(80%); opacity: 75%;
+    position: relative;
+}
+
+.image{
+    display: flex;
+}
+
+.image .text .hello{
+    font-size: 30px;
+}
+.image .text{
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    display: inline;
+    font-size: 40px;
+    font-weight: bold;
+    word-spacing: 10px;
+    letter-spacing: 6px;
+}
+
+.navigation ul{
+    padding-top: 25px;
+}
+
+.navigation ul li{
+    display: inline-block;
+    padding: 25px;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #253f53;
+    background-color: white;
+    padding: 10px 15px 10px 15px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+}
+
+.navigation ul li a:hover{
+    background-color: #253f53;
+    color: white;
+}
+
+.navigation ul li a:active{
+    background-color: #478d8d;
+    color: white;
+}
+
+
+.main{
+    width: 100%;
+}
+
+.main #about{
+    display: flex;
+    flex-direction: row;
+}
+
+.main #about .picture{
+    margin-top: 170px;
+    margin-left: 200px;
+}
+
+.main #about .picture img{
+    max-width: 100%;
+    max-height: 100%;
+
+}
+.main #about .aboutMe{
+    margin-top: 170px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.main #about .aboutMe .title{
+    font-size: 20px;
+    color: #253f53;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #478d8d;
+    text-shadow: 2px 2px #a0e0d6;
+}
+
+.main #about .aboutMe .description{
+    font-size: 20px;
+    color: #253f53;
+    font-weight: lighter;
+    line-height: 30px;
+    text-indent: 30px;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.main #about .aboutMe .information{
+    display: flex;
+    margin-top: 50px;
+    color: #253f53;
+    letter-spacing: 3px;
+    border: 3px solid #253f53;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #effbf9;
+
+}
+
+.main #about .aboutMe .information div:first-child{
+    margin-left: 70px;
+}
+
+.main #about .aboutMe .information div:first-child p:first-child{
+    margin-bottom: 40px;
+}
+
+.main #about .aboutMe .information div:first-child p:last-child{
+    margin-top: 40px;
+}
+
+
+.main #about .aboutMe .information div:last-child{
+    margin-left: 100px;
+}
+
+.main #about .aboutMe .information div:last-child p:first-child{
+    margin-bottom: 40px;
+}
+
+
+.main #about .aboutMe .information div:last-child p:last-child{
+    margin-top: 40px;
+}
+
+.main #education{
+    display: flex;
+    flex-direction: row;
+}
+.main #education .title{
+    font-size: 20px;
+    color: #253f53;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px #a0e0d6;
+    border-bottom: 2px solid #478d8d;
+}
+
+.main #education div:first-child{
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.main #education div:last-child{
+    margin-top: 130px;
+    margin-left: 100px;
+}
+
+
+.main #education div:first-child .first{
+    list-style-type: circle;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    line-height: 50px;
+    color: #253f53;
+}
+
+.main #education div:last-child .second{
+    list-style-type: circle;
+    margin-top: 35px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    line-height: 50px;
+    color: #253f53;
+}
+
+.main #education div:first-child .first li:nth-child(2n-1){
+    list-style-type: none;
+    display: inline;
+    background-color: #effbf9;
+    border: 3px dotted #478d8d;
+    padding: 5px 10px 5px 10px;
+    font-size: 15px;
+}
+
+.main #education div:last-child .second li:nth-child(2n-1){
+    list-style-type: none;
+    display: inline;
+    background-color: #effbf9;
+    border: 3px dotted #478d8d;
+    padding: 5px 10px 5px 10px;
+    font-size: 15px;
+}
+
+.main #interests{
+    background-color: #478d8d;
+}
+
+.main #interests .type{
+    margin-top: 80px;
+    margin-left: 70px;
+   padding-bottom: 20px;
+}
+
+.main #interests .type .title{
+    display: inline-block;
+    font-size: 20px;
+    color: #effbf9;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    border-bottom: 2px solid #effbf9;
+}
+
+.main #interests .type .nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #effbf9;
+    margin-right: 75px;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main #interests .type .nav ul li{
+    list-style-type: none;
+    background-color: #253f53;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 10px 60px 10px 60px;
+    letter-spacing: 3px;
+    border-left: 7px solid #d2abab;
+}
+
+.main #interests .type .nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.main #interests .type .nav ul li:hover{
+    background-color: #d2abab;
+}
+
+.main #interests .type .nav ul li:first-child{
+    margin-right: 50px;
+}
+
+.main #interests .type .nav ul li:last-child{
+    margin-left: 50px;
+}
+
+.main #interests .type #books{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-around;
+    margin-right: 75px;
+    flex-wrap: wrap;
+    border: 5px dashed #d2abab;
+}
+
+.main #interests .type #music{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-around;
+    margin-right: 75px;
+    flex-wrap: wrap;
+    border: 5px dashed #d2abab;
+}
+
+.main #interests .type #other{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    margin-right: 75px;
+    flex-wrap: wrap;
+    border: 5px dashed #d2abab;
+}
+
+.main #interests .type #books figure{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main #interests .type #music figure{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main #interests .type #books img{
+    box-shadow: 3px 2px #effbf9;
+}
+
+.main #interests .type #books figure figcaption{
+   color: white;
+   letter-spacing: 2px;
+   text-align: center;
+   padding-top: 10px;
+}
+
+.main #interests .type #music figure figcaption{
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.main #interests .type #other figure figcaption{
+    color: white;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.main #interests .type #music figure img{
+    border: 4px solid black;
+}
+
+.main #interests .type #other figure img{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.main #interests .type #books .figure1 img{
+    margin-right: 30px;
+}
+
+.main #interests .type #books .figure2 img{
+    margin-right: 30px;
+}
+
+.main #interests .type #books .figure2 figcaption{
+    margin-right: 30px;
+}
+
+.main #projects{
+    display: flex;
+    flex-direction: row;
+}
+
+.main #projects .title{
+    font-size: 20px;
+    color: #253f53;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px #a0e0d6;
+    border-bottom: 2px solid #478d8d;
+}
+
+.main #projects div:first-child{
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.main #projects div:last-child{
+    margin-top: 130px;
+    margin-left: 100px;
+}
+
+
+.main #projects div:first-child .first{
+    list-style-type: circle;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    line-height: 50px;
+    color: #253f53;
+}
+
+.main #projects div:last-child .second{
+    list-style-type: circle;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    line-height: 50px;
+    color: #253f53;
+}
+
+.main #projects div:first-child .first li:nth-child(2n-1){
+    list-style-type: none;
+    display: inline;
+    background-color: #effbf9;
+    border: 3px dotted #478d8d;
+    padding: 5px 10px 5px 10px;
+    font-size: 15px;
+}
+
+.main #projects div:last-child .second li:nth-child(2n-1){
+    list-style-type: none;
+    display: inline;
+    background-color: #effbf9;
+    border: 3px dotted #478d8d;
+    padding: 5px 10px 5px 10px;
+    font-size: 15px;
+}
+
+.main #contact{
+    display: flex;
+    justify-content: center;
+    border: 2px solid #478d8d;
+    margin: 0 15px 15px 15px;
+}
+
+.main #contact form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main #contact form .first{
+    margin-top: 20px;
+    margin-left: 180px;
+    margin-bottom: 40px;
+}
+
+.main #contact form .first label input{
+    width: 500px;
+}
+
+.main #contact form .first ul li{
+    letter-spacing: 2px;
+    font-size: 15px;
+    list-style-type: none;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+.main #contact form .second{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-right: 200px;
+    margin-bottom: 40px;
+}
+.main #contact form .second label input{
+    width: 500px;
+    margin-bottom: 20px;
+    padding: 8px 3px 8px 3px;
+    border-radius: 5px;
+    border: 1px solid #478d8d;
+}
+
+.main #contact form .second label input:focus{
+    outline: none !important;
+    border: 2px solid #478d8d;
+}
+
+.main #contact form .second label textarea{
+    width: 500px;
+    height: 150px;
+    border-radius: 5px;
+    border: 1px solid #478d8d;
+    resize: none;
+}
+
+.main #contact form .second label textarea:focus{
+    outline: none !important;
+    border: 2px solid #478d8d;
+}
+
+.main #contact form .second button{
+    background-color: #478d8d;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 3px 2px 3px 2px;
+    width: 150px;
+    align-self: center;
+    letter-spacing: 2px;
+}
+
+.main #contact form .second button a{
+    text-decoration: none;
+    color: white;
+}
+
+.main #contact p{
+    display: inline-block;
+    font-size: 20px;
+    color: #253f53;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px #a0e0d6;
+    border-bottom: 2px solid #478d8d;
+    margin-bottom: 20px;
+}
+
+.last{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #253f53;
+}
+
+ .last footer ul{
+    list-style-type: none;
+}
+
+ .last footer ul li{
+    display: inline-block;
+    padding-right: 8px;
+}
+
+
+@media (max-width: 1040px) {
+    body{
+        width: 1496px;
+    }
+    .div, .last{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.main #interests .type .nav ul .active{
+    background-color: #d2abab;
+    box-shadow: 2px 2px #b48471;
+}

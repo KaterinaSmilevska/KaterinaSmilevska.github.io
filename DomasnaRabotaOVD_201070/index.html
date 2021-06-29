@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal web page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="myscripts.js"></script>
+
+</head>
+<body>
+    <div class="div">
+        <header>
+            <div class="navigation">
+                <ul>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a href="#interests">Interests</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <div class="image">
+        <img class="background" src="images/cover.png" alt="background">
+        <div class="text">
+            <p class="hello">Hello,</p>
+            I'm Katerina Smilevska
+        </div>
+    </div>
+    <div class="main">
+        <div id="about">
+            <div class="picture">
+                <img src="images/img5.jpg" alt="aboutMe">
+            </div>
+            <div class="aboutMe">
+                <span class="title">ABOUT ME</span>
+                <p class="description">I'm a student in the field of software engineering and information systems at
+                the Faculty of computer science and engineering in Skopje. </p>
+                <div class="information">
+                    <div>
+                        <p><b>Name</b>: Katerina Smilevska</p>
+                        <p><b>Age</b>: 19</p>
+                        <p><b>Date of birth</b>: 21 September 2001</p>
+                    </div>
+                    <div>
+                        <p><b>City</b>: Bitola, Macedonia</p>
+                        <p><b>Phone</b>: (+389) 123 / 456 - 789</p>
+                        <p><b>Email</b>: smilevskakaterina5@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="education">
+            <div>
+                <span class="title">EDUCATION</span>
+                <ul class="first">
+                    <li>2021</li>
+                    <li>Student at  FINKI - Skopje</li>
+                    <li>09.2020</li>
+                    <li>Learning Visual Studio 2019 and C#</li>
+                    <li>05.2020</li>
+                    <li>Computer graphics in C++</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="second">
+                    <li>03.2020</li>
+                    <li>Attestation de r&eacute;usitte au niveau B1</li>
+                    <li>2020</li>
+                    <li>High school at Gimnazija "Josip Broz - Tito" - Bitola</li>
+                    <li>2016</li>
+                    <li>Elementary school at "St. Kliment Ohridski" - Bitola</li>
+                </ul>
+            </div>
+        </div>
+        <div id="interests">
+            <div class="type">
+                <p class="title">Interests</p>
+                <div class="nav">
+                    <ul>
+                        <li class="active">
+                            <a onclick="NewDivhere()" href="#books">Books</a>
+                        </li>
+                        <li>
+                            <a onclick="NewDivhere2()" href="#music">Music</a>
+                        </li>
+                        <li>
+                            <a onclick="NewDivhere3()" href="#other">Other</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="books">
+                    <figure>
+                        <img src="images/theDaVinciCode.jpg" alt="the Da Vinci Code">
+                        <figcaption>"The Da Vinci Code" - Dan Brown</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/angelsAndDemons.jpg" alt="Angels and Demons">
+                        <figcaption>"Angels and Demons" - Dan Brown</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/theLostSymbol.jpg" alt="The Lost Symbol">
+                        <figcaption>"The Lost Symbol" - Dan Brown</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/digitalFortress.jpg" alt="Digital Fortress">
+                        <figcaption>"Digital Fortress" - Dan Brown</figcaption>
+                    </figure>
+                    <figure class="figure1">
+                        <img src="images/deceptionPoint.jpg" alt="Deception Point">
+                        <figcaption>"Deception Point" - Dan Brown</figcaption>
+                    </figure>
+                    <figure class="figure2">
+                        <img src="images/origin.jpg" alt="Origin">
+                        <figcaption>"Origin" - Dan Brown</figcaption>
+                    </figure>
+                </div>
+                <div style="display: none" id="music">
+                    <figure>
+                        <img src="images/blackSabbath.jpg" alt="Black Sabbath">
+                        <figcaption>Black Sabbath</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/ironMaiden.jpg" alt="Iron Maiden">
+                        <figcaption>Iron Maiden</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/metallica.jpg" alt="Metallica">
+                        <figcaption>Metallica</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/deepPurple.jpg" alt="Deep Purple">
+                        <figcaption>Deep Purple</figcaption>
+                    </figure>
+                </div>
+                <div style="display: none" id="other">
+                    <figure>
+                        <img src="images/img7.jpg" alt="programming">
+                        <figcaption>Programming</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/img6.jpg" alt="basketball">
+                        <figcaption>Playing basketball</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/img9.jpg" alt="travelling">
+                        <figcaption>Travelling</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+        <div id="projects">
+            <div>
+                <span class="title">Projects</span>
+                <ul class="first">
+                    <li>05.2020</li>
+                    <li>Computer graphics in C++</li>
+                    <li>03.2020</li>
+                    <li>"Fractals - fractal structures and dimensions"</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="second">
+                    <li>09.2019</li>
+                    <li>"Les m&eacute;moires de la Premi&egrave;re Guerre mondiale"</li>
+                </ul>
+            </div>
+        </div>
+        <div id="contact">
+            <form>
+                <div class="first">
+                    <p>Contact</p>
+                    <ul>
+                        <li class="fa fa-map-marker" style="font-size: 40px"></li>
+                        <li>Bitola, Macedonia</li>
+                        <li class="fa fa-envelope" style="font-size: 40px"></li>
+                        <li>smilevskakaterina5@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="second">
+                    <label>
+                        <input type="text" name="Name" placeholder="Name" required = required>
+                    </label>
+                    <label>
+                        <input type="email" name="Email" placeholder="Email">
+                    </label>
+                    <label>
+                        <textarea placeholder="Your message..."></textarea>
+                    </label>
+                    <button type="submit">
+                        <a href="#">Submit</a>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+        <div class="last">
+            <footer>
+                <ul>
+                    <li>
+                        <a class="fa fa-facebook-square" href="#" style="font-size: 36px; color: white"></a>
+                    </li>
+                    <li>
+                        <a class="fa fa-instagram" href="#" style="font-size: 36px; color: white"> </a>
+                    </li>
+                    <li>
+                        <a class="fa fa-twitter-square" href="#" style="font-size: 36px; color: white"></a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+</body>
+</html>
